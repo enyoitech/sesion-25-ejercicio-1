@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>sesion-25-ej-01</title>
+
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col">
+                    <div class="card" style="width: 25rem; ">
+                        <img src="./Imagen1.png" class="card-img-top" alt="...">
+                            <h1 class="text-center">Sesion 25 - Ejercicio Nº-1 </h1>
+                        <section >
+                        <div class="card-body">
+                            <h5 class="card-title">Login:</h5>
+                            <p class="card-text text-black-50">El usuario podra ingresar un usuario y una contraseña y realizaremos la respectiva validacion de ingreso</p>
+                            <form id="login-form" >
+                                <span id="errorMsn" ></span>
+                                <label class="mt-lg-1" for="user">Ingrese Usuario</label>
+                                <input id="user" class="form-control" type="text" placeholder="Digite su usuario" aria-label="introduzca usuario">
+                                <label class="mt-2" for="pass">Ingrese Contraseña</label>
+                                <input id="pass" class="form-control" type="password" placeholder="Digite su contraseña" aria-label="introduzca contraseña">
+                                
+                                <input  type="submit" value="Ingresar" class="form-control mt-1 btn btn-secondary btn-block rounded" />
+                            </form>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="col">
+                <p id="resultadoLogin" class="mt-5"></p>
+            </div>
+        </div>
+       
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
