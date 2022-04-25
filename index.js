@@ -16,7 +16,7 @@ document
      *al cargar la pagina evitando que se envie el formulario vacio.
      */
     event.preventDefault();
-    // hacemos el llamado a nuestra funcion suma
+    // hacemos el llamado a nuestra funcion login()
     login();
 });
 
@@ -39,7 +39,7 @@ function login (){
       let nodoErrorMsn = document.getElementById("errorMsn");
 
       /**
-       * accedemos a la propiedad .value de cada nodo la cual guarda el valor en texto (string)
+       * accedemos a la propiedad (.value) de cada nodo la cual guarda el valor en texto (string)
        * ingresado por elusuario y lo guaramos en constantes
        */
     const user = nodoUser.value;
@@ -77,9 +77,8 @@ function login (){
      */
     if (resp) {
     /**
-     *  utilizaremos  nodoResultadoLogin accediendo a su propiedad '.textContent'
-     * y asignaremos alli el resultado de la suma.
-     * empleamos  un template-string para mostrar texto y nuestro resultado
+     *  utilizaremos  nodoResultadoLogin accediendo a su propiedad '.innerHTML'
+     * y asignaremos alli un mensaje de exito.
      */
      nodoResultadoLogin.innerHTML = `Login <strong> Exitoso</strong> `;
       return;
